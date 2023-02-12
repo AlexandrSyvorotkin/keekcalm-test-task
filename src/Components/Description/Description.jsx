@@ -6,9 +6,9 @@ const Description = ({img, short_text, full_text, stack}) => {
 		<div className={styles.description}>
 			<div className={styles.description_content}>
                 <div className={styles.description_content}>
-                    <div className={styles.img}>
+                    <a className={styles.img} href='https://xn--b1afsdbkcs2b7d.xn--p1ai/' target="_blank">
                         <img src={img} alt=""/>
-                    </div>
+                    </a>
                     <div className={styles.description_text}>
                         <p>{short_text}</p>
                         <p>{full_text}</p>

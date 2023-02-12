@@ -24,10 +24,13 @@
   position: relative;
   min-width: 320px;
   width: 320px;
-  max-height: 400px;
+  max-height: 450px;
   height: 100%;
   overflow: hidden;
-  background-color: thistle;
+  border: 1px solid #100f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -40,6 +43,11 @@
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.description {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .slideOne {

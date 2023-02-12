@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
+import styles from './Layout.module.scss'
 import img1 from "../../assets/experience/sevenhiils.png";
 import img2 from "../../assets/experience/ibk.png";
 import img3 from "../../assets/main/img3.png";
@@ -16,12 +17,13 @@ const Layout = () => {
         setModalOpen(false)
     }
 
-    useEffect(() => {
-        setModalOpen(true)
-    }, [])
+    // useEffect(() => {
+    //     setModalOpen(true)
+    // }, [])
 
 	return (
-		<div>
+		<main className={styles.layout}>
+            <div className={styles.header}>Мой коммерческий опыт работы</div>
 			<Description
                 img={img1}
                 short_text='Сайт киберспортивного турнира "7 холмов"'
@@ -55,7 +57,7 @@ const Layout = () => {
                 <Modal closeModal={closeModal}/>
                 :
                 null}
-		</div>
+		</main>
 	);
 };
 

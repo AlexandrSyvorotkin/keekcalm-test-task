@@ -1,6 +1,5 @@
 .description {
   margin-bottom: 200px;
-  margin-top: 200px;
   
   &_header {
     text-transform: uppercase;
@@ -15,7 +14,7 @@
     align-items: center;
 	justify-content: flex-start;
     gap: 130px;
-    margin-top: 130px;
+    margin-top: 60px;
   }
   
   &_text {
@@ -46,6 +45,12 @@
   .img {
 	width: 800px;
 	height: 400px;
+	transition: .7s;
+	display: block;
+	cursor: pointer;
+	&:hover {
+	  transform: scale(1.08);
+	}
 	& > img {
 	  object-fit: cover;
 	  width: 100%;

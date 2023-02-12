@@ -7,9 +7,9 @@ const DescriptionReverse = ({img, short_text, full_text, stack}) => {
     return (
         <div className={styles.description}>
             <div className={styles.description_content}>
-                <div className={styles.img}>
+                <a className={styles.img} href='https://ibkmiass.ru/' target="_blank">
                     <img src={img} alt=""/>
-                </div>
+                </a>
                 <div className={styles.description_text}>
                     <p>{short_text}</p>
                     <p>{full_text}</p>

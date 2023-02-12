@@ -47,6 +47,12 @@
   .img {
 	width: 800px;
 	height: 400px;
+	transition: .7s;
+	display: block;
+	cursor: pointer;
+	&:hover {
+	  transform: scale(1.08);
+	}
 	& > img {
 	  object-fit: cover;
 	  width: 100%;
