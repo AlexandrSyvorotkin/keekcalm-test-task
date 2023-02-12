@@ -1,0 +1,38 @@
+.backdrop {
+  background-color: rgba(0,0,0,.74);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s;
+  -webkit-animation: ProgressModal_showBackdrop__lYjPY .3s ease-out;
+  animation: ProgressModal_showBackdrop__lYjPY .3s ease-out;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  .content {
+	background-color: white;
+	padding: 20px;
+	max-width: 600px;
+  }
+  .header {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+  }
+  .warning {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 16px;
+	& >:nth-child(1) {
+	  font-weight: bold;
+	}
+	&>:nth-child(2) {
+	  margin-top: 30px;
+	}
+  }
+}

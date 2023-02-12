@@ -13,7 +13,7 @@
   &_content {
     display: flex;
     align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
     gap: 130px;
     margin-top: 130px;
   }
@@ -33,6 +33,12 @@
       line-height: 130%;
       color: #141414;
     }
+	&>:nth-child(3) {
+	  margin-top: 30px;
+	  font-size: 18px;
+	  line-height: 130%;
+	  color: #141414;
+	}
   }
   .reverse {
 	flex-direction: row-reverse;

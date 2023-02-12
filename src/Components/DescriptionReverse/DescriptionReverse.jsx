@@ -3,7 +3,7 @@ import styles from './DescriptionReverse.module.scss'
 
 
 
-const DescriptionReverse = ({img, short_text, full_text}) => {
+const DescriptionReverse = ({img, short_text, full_text, stack}) => {
     return (
         <div className={styles.description}>
             <div className={styles.description_content}>
@@ -13,6 +13,7 @@ const DescriptionReverse = ({img, short_text, full_text}) => {
                 <div className={styles.description_text}>
                     <p>{short_text}</p>
                     <p>{full_text}</p>
+                    <p>Технологический стек: <span>{stack}</span></p>
                 </div>
             </div>
         </div>
