@@ -17,9 +17,9 @@ const Layout = () => {
         setModalOpen(false)
     }
 
-    // useEffect(() => {
-    //     setModalOpen(true)
-    // }, [])
+    useEffect(() => {
+        setModalOpen(true)
+    }, [])
 
 	return (
 		<main className={styles.layout}>
