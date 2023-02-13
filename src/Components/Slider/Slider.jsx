@@ -1,12 +1,6 @@
 import { useEffect, useRef } from "react";
 import styles from './Slider.module.scss'
 import mySwiper from "../../utils/sliderFunction";
-// import slide1 from '../../assets/slider/slide1.png'
-// import slide2 from '../../assets/slider/slide2.png'
-// import slide3 from '../../assets/slider/slide3.png'
-// import slide4 from '../../assets/slider/slide4.png'
-// import slide5 from '../../assets/slider/slide5.png'
-// import slide6 from '../../assets/slider/slide6.png'
 import slide1 from '../../assets/cases/Screenshot_1.png'
 import slide2 from '../../assets/cases/Screenshot_2.png'
 import slide3 from '../../assets/cases/Screenshot_3.png'
@@ -22,14 +16,7 @@ export default function SectionSwiper() {
     const sliderClasses = `${styles.slider} slider`;
     const titleClasses = `${styles.title} title`;
 
-    const slides = [
-        `${styles.slideOne}`,
-        `${styles.slideTwo}`,
-        `${styles.slideThree}`,
-        `${styles.slideFour}`,
-        `${styles.slideFive}`,
-        `${styles.slideSix}`,
-    ].map((el) => el + " " + styles.slide);
+
 
     const slidesAlt = [
         {id: 1, img: slide1, text: 'Регистрация на турнир', path: '/work_case_1'},
@@ -66,11 +53,6 @@ export default function SectionSwiper() {
                             <p className={styles.description}>{slide.text}</p>
                         </div>
                     ))}
-                    {/*{slides.map((image, index) => (*/}
-                    {/*    <div key={index} className={itemClasses}>*/}
-                    {/*        <div className={image}></div>*/}
-                    {/*    </div>*/}
-                    {/*))}*/}
                 </div>
             </div>
         </div>
